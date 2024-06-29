@@ -10,9 +10,12 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      // defines association here
     }
   }
+  
+  // defines attributes of the model of title, author, genre, year
+  // title and author are requirewd to be filled
   Book.init({
     title: {
       type: DataTypes.STRING,
@@ -38,5 +41,7 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Book',
   });
+
+  // returns the book 
   return Book;
 };
