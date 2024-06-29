@@ -1,5 +1,5 @@
 # Ignores the whole node_modules directory
-node_modules
+/node_modules
 
 # Ignores the package-lock.json
 package-lock.json
