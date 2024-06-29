@@ -1,5 +1,14 @@
-# Ignores the whole node_modules directory
-/node_modules.file
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore npm debug log
+npm-debug.log
 
 # Ignores the package-lock.json
 package-lock.json
